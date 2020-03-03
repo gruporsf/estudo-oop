@@ -2,7 +2,7 @@
 
 namespace App\Src;
 
-use App\Src\User;
+use App\Src\Usuario;
 use App\Src\Geral;
 
 abstract class Conta{
@@ -12,7 +12,7 @@ abstract class Conta{
     protected $cliente;
     protected $saldo;
 
-    protected function __construct($agencia, $conta, User $cliente, $saldo){
+    protected function __construct($agencia, $conta, Usuario $cliente, $saldo){
         $this->agencia = $agencia;
         $this->conta = $conta;
         $this->cliente = $cliente;

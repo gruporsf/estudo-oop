@@ -2,11 +2,14 @@
 
 namespace App\Src;
 
+use App\Src\Usuario;
+use App\Src\Geral;
+
 class ContaCorrente extends Conta{
 
     private $limite;
 
-    public function __construct($agencia, $conta, User $cliente, $saldo, $limite){
+    public function __construct($agencia, $conta, Usuario $cliente, $saldo, $limite){
 
         parent::__construct($agencia, $conta, $cliente, $saldo);
 

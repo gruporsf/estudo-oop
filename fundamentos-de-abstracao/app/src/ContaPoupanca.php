@@ -2,14 +2,14 @@
 
 namespace App\Src;
 
-use App\Src\User;
+use App\Src\Usuario;
 use App\Src\Geral;
 
 class ContaPoupanca extends Conta{
 
     private $taxa;
 
-    public function __construct($agencia, $conta, User $cliente, $saldo){
+    public function __construct($agencia, $conta, Usuario $cliente, $saldo){
 
         parent::__construct($agencia, $conta, $cliente, $saldo);
 

@@ -2,12 +2,11 @@
 
 require_once __DIR__ . "/vendor/autoload.php";
 
-use App\Src\User;
+use App\Src\Usuario;
 use App\Src\ContaPoupanca;
 use App\Src\ContaCorrente;
 
-//Constantes
-$ricardo = new User('Ricardo', 'Ferreira');
+$ricardo = new Usuario('Ricardo', 'Ferreira');
 
 $contaPoupanca = new ContaPoupanca('2237', '88', $ricardo, 0);
 
